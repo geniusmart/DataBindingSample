@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
     public void bindingRecyclerview(View view) {
         startActivity(new Intent(this,ListItemBindingActivity.class));
     }
+
+    public void bindingLayoutDetails(View view) {
+        startActivity(new Intent(this,LayoutDetailsActivity.class));
+    }
 }

@@ -6,6 +6,7 @@ public class User extends BaseObservable {
     private String firstName;
     private String lastName;
     public boolean isFriend = true;
+    public boolean isAdult = true;
 
     public User(String firstName, String lastName) {
         this.firstName = firstName;

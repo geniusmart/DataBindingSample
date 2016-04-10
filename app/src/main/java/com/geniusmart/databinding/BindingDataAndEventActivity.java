@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.geniusmart.databinding.databinding.ActivityEasyBindingBinding;
 import com.geniusmart.databinding.model.User;
+import com.geniusmart.databinding.utils.MyHandler;
 
 public class BindingDataAndEventActivity extends AppCompatActivity {
 

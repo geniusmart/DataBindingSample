@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListItemBindingActivity" />
-        <activity android:name=".BindingDataAndEventActivity"></activity>
+        <activity android:name=".BindingDataAndEventActivity" />
+        <activity android:name=".LayoutDetailsActivity"></activity>
     </application>
 
 </manifest>

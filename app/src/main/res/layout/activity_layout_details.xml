@@ -3,13 +3,19 @@
 
     <data>
 
-        <variable
-            name="user"
-            type="com.geniusmart.databinding.model.User" />
+        <import type="com.geniusmart.databinding.model.User" />
+
+        <import type="android.view.View" />
+
+        <import type="java.util.List" />
 
         <variable
-            name="handler"
-            type="com.geniusmart.databinding.utils.MyHandler" />
+            name="user"
+            type="User" />
+
+        <variable
+            name="userList"
+            type="List&lt;User>" />
     </data>
 
     <LinearLayout
@@ -20,14 +26,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{user.isFriend ? handler.onClickFriend : handler.onClickEnemy}"
-            android:clickable="true"
-            android:text="@{user.firstName}" />
+            android:text="@{user.lastName}"
+            android:visibility="@{user.isAdult ? View.VISIBLE : View.GONE}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.lastName}"
-            android:onClick="@{!user.isFriend ? handler.onClickFriend : handler.onClickEnemy}"/>
+            android:text='@{userList[0].firstName +" and "+userList[1].firstName }' />
+
     </LinearLayout>
+
 </layout>
